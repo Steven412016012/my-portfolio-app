@@ -1,0 +1,33 @@
+.not-found {
+    width: 1020px;
+    margin: 300px 0px 300px 0px;
+    padding: 20px 0px 20px 0px;
+  }
+
+.not-found > h3,
+.not-found > h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 30px 0px 30px 0px;
+  padding: 0px;
+  font-family: "Poppins-bold", sans-serif;
+  color: #222831;
+  letter-spacing: 1px;
+  /*border-bottom: 5px solid #cccccc; */
+}
+.not-found > h3::after,
+.not-found > h1::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #8127a2;
+  width: 25%;
+  position: relative;
+  bottom: -5px; /* your padding + border-width */
+  margin: auto;
+}
+
+@media only screen and (max-width: 1020px) {
+    .not-found {
+      width: 100%;
+    }
+  }
